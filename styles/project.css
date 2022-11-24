@@ -1,0 +1,83 @@
+.banner-content {
+	order: 1;
+	margin-top: 3%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: left;
+}
+.content:first-child {
+	order: 1;
+}
+.content:last-child {
+	order: 2;
+}
+.content {
+	width: 35%;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: left;
+	font-size: 1rem;
+	row-gap: 10px;
+	color: rgb(89, 89, 89);
+	object-fit: cover;
+}
+.content > img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.content > span {
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: #000;
+}
+
+.project {
+	width: 100%;
+	min-height: 100%;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	row-gap: 60px;
+	margin: 6% 0;
+	order: 2;
+}
+.project-img {
+	width: 70%;
+	height: auto;
+}
+.project-img > img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 907px) {
+	.banner-content {
+		width: 100%;
+		flex-direction: column;
+		row-gap: 30px;
+	}
+	.content:first-child {
+		order: 2;
+	}
+	.content:last-child {
+		order: 1;
+	}
+	.content {
+		width: 85%;
+	}
+	.project-img {
+		width: 85%;
+	}
+}

@@ -1,0 +1,85 @@
+.project-types {
+	min-height: 100%;
+	height: max-content;
+	height: max-content;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 10px;
+}
+
+.project-item {
+	text-decoration: none;
+	width: 400px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	row-gap: 2px;
+}
+.project-item > a {
+	text-decoration: none;
+	/* background: url("../images/cheff.jpg") no-repeat cover center; */
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	text-align: left;
+	/* background-color: yellow; */
+}
+.project-item > a > img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	transition: ease-in-out 0.3s;
+}
+.project-item > a > img:hover {
+	box-shadow: 0 10px 10px rgba(94, 94, 94, 0.2);
+	transform: scale(1.06);
+	transition: ease-in-out 0.3s;
+}
+.project-item > section {
+	width: 100%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	row-gap: 0px;
+}
+.project-item > section > h1 {
+	margin-top: 10px;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.project-item > section > * {
+	height: fit-content;
+	margin: 0;
+	padding: 0;
+}
+@media screen and (max-width: 880px) {
+	.banner {
+		height: 100vh;
+	}
+	.project-item {
+		width: 85%;
+		height: 400px;
+	}
+	.banner-content {
+		padding: 0 20px 0 20px;
+	}
+	.banner-content > h1 {
+		font-size: 1rem;
+		word-wrap: break-word;
+		word-break: keep-all;
+		width: fit-content;
+		height: auto;
+		font-size: 30px !important;
+	}
+	.banner-content > p {
+		font-size: 1.1rem !important;
+		width: 100% !important;
+	}
+}
